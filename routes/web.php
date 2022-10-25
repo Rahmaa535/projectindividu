@@ -4,7 +4,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\Logincontroller;
 use Illuminate\Support\Facades\Route;
 
 /*
