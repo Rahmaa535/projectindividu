@@ -32,18 +32,7 @@ Route::middleware('auth')->group(function(){
 });
 
 
-route::get('/', function (){
-    return view ('home');
-});
-route::get('/about', function (){
-    return view ('about');
-});
-route::get('/project', function (){
-    return view ('project');
-});
-route::get('/contact', function (){
-    return view ('contact');
-});
+
 
 
 
@@ -63,5 +52,16 @@ route::get('/contact', function (){
 Route::middleware('guest')->group(function(){
     Route::get('login', [LoginController::class,'index'])->name('login');
     Route::post('login', [LoginController::class,'authenticate']);
-    
+    route::get('/', function (){
+        return view ('home');
+    });
+    route::get('/about', function (){
+        return view ('about');
+    });
+    route::get('/project', function (){
+        return view ('project');
+    });
+    route::get('/contact', function (){
+        return view ('contact');
+    });
 });
