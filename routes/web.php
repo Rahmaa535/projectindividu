@@ -32,6 +32,19 @@ Route::middleware('auth')->group(function(){
 });
 
 
+route::get('/', function (){
+    return view ('home');
+});
+route::get('/about', function (){
+    return view ('about');
+});
+route::get('/project', function (){
+    return view ('project');
+});
+route::get('/contact', function (){
+    return view ('contact');
+});
+
 
 
 // Route::get('/', 'DashboardController@index');
@@ -50,9 +63,5 @@ Route::middleware('auth')->group(function(){
 Route::middleware('guest')->group(function(){
     Route::get('login', [LoginController::class,'index'])->name('login');
     Route::post('login', [LoginController::class,'authenticate']);
-    Route::get('/', function () {return view('home'); });
-    Route::get('/about', function () {return view('about'); });
-    Route::get('/projects', function () {return view('project'); });
-    Route::get('/contact', function () {return view('contact'); });
-    Route::get('/index', function () {return view('template'); });
+    
 });
