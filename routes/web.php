@@ -25,7 +25,7 @@ Route::middleware('auth')->group(function(){
     Route::resource('master_s', SiswaController::class)->middleware('auth');
     Route::get('master_s/{id_siswa}/hapus', [SiswaController::class, 'hapus'])->name('master_s.hapus');
     Route::resource('master_p', ProjectController::class)->middleware('auth');
-    Route::get('master_p/create/{id_siswa}', [ProjectController::class, 'create'])->name('master_p.create');
+    Route::get('master_p/tambah/{id_siswa}', [ProjectController::class, 'create'])->name('master_p.tambah');
     Route::get('master_p/{id_siswa}/hapus', [ProjectController::class, 'hapus'])->name('master_p.hapus');
     Route::resource('master_k', ContactController::class)->middleware('auth');
     Route::post('logout', [LoginController::class,'logout']);
