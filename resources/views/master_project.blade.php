@@ -26,14 +26,16 @@
                      </tr>
                  </thead>
                  @foreach($data as $item)
+                 <tbody>
                  <tr>
                      <td> {{ $item->nisn }} </td> 
                      <td> {{ $item->nama }} </td>
                      <td class="text-center">
                          <a onclick="show({{ $item->id }})" class="btn btn-sm btn-info btn-circle"><i class="fas fa-folder-open"> </i></a>
-                         <a href="{{ route('master_p.create', $item->id)   }}" class="btn btn-sm btn-success btn-circle"><i class="fas fa-plus"> </i></a>   
+                         <a href="{{ route('master_p.tambah', $item->id)   }}" class="btn btn-sm btn-success btn-circle"><i class="fas fa-plus"> </i></a>   
                      </td>
                  </tr>
+                 </tbody>
                  @endforeach
         </table>
                  <div class="card-footer d-flex justify-content-end">

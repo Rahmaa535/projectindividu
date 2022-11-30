@@ -3,7 +3,8 @@
 @section('title', 'Tambah Siswa')
 @section('content-title', 'Tambah Siswa')
 @section('content')
-    <h1>Halaman Tambah Siswa</h1>
+
+ <br>
     <div class="row">
         <div class="col-lg-12">
             <div class="card shadow mb-4">

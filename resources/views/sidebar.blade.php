@@ -37,7 +37,7 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="master_k">
+        <a class="nav-link" href="/master_k">
             <i class="fas fa-id-card"></i>
          <span>Master Kontak</span></a>
     </li>

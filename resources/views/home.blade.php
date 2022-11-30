@@ -33,9 +33,9 @@
     <body id="home">
 
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info shadow-sm fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">Muhammad Alif Adiawan</a>
+                <a class="navbar-brand" href="#">Khafidatul Rahma</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>

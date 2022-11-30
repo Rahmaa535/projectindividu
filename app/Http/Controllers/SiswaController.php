@@ -187,6 +187,6 @@ class SiswaController extends Controller
         $siswa = siswa::find($id)->delete();
         Session::flash('success', "data berhasil dihapus!!");
         return redirect('/master_s');
-        //
+        
     }
 }
